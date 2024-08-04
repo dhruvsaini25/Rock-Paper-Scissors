@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    background-color: black;
+    /* background-image: url('images/green\ fn.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat; */
+    /* height: 100vh;
+    margin: 0; */
+    /* filter: blur(20px); */
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/green\ fn.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1; / Ensures the content stays above the pseudo-element */
+    text-align: center;
+    color: white;
+    padding-top: 20%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 30px;
+    font-size: 30px;
+    
+}
+header > h1{
+    color: black;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.scoreboard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 64px;
+}
+.sign{
+    width: 15%;
+}
+.result{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 55px;
+    padding: 20px;
+    /* height: 90px; */
+    /* width: 50px; */
+}
+.choices{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    
+}
+.options{
+    width: 10%;
+    
+    border: 3px;
+}
+.move{
+    font-size: 48px;
+    text-align: center;
+}
