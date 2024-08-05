@@ -3,6 +3,7 @@ body{
     flex-direction: column;
     gap: 0px;
     background-color: black;
+    color: white;
     /* background-image: url('images/green\ fn.jpg');
     background-size: 100% 100%;
     background-position: center;
@@ -28,7 +29,7 @@ body::before {
 
 .content {
     position: relative;
-    z-index: 1; / Ensures the content stays above the pseudo-element */
+    z-index: 1;
     text-align: center;
     color: white;
     padding-top: 20%;
@@ -45,7 +46,7 @@ header{
     
 }
 header > h1{
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-family:'Times New Roman', Times, serif;
     
@@ -56,7 +57,19 @@ header > h1{
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 64px;
+    font-size: 80px;
+    border: none;
+    background: none;
+}
+.scoreline{
+    background: none;
+    border: none;
+    font-size: 80px;
+    width: 160px;
+    text-align: center;
+}
+.scoreline::placeholder{
+    color: #fff;
 }
 .sign{
     width: 15%;
@@ -69,15 +82,45 @@ header > h1{
     text-align: center;
     font-size: 55px;
     padding: 20px;
+    background: none;
     /* height: 90px; */
     /* width: 50px; */
+}
+.resultline{
+    background: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 55px;
+    padding: 20px;
+    border: none;
+    color: white;
+}
+.resultline::placeholder {
+    color: #fff;
 }
 .choices{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 40px;
     justify-content: center;
+    align-items: center;
     
+}
+.buttonchoices{
+    gap: 40px;
+    display: inline-block;
+    background: none;
+    border: none;
+    justify-content: center;
+    width: 150px;
+    cursor: pointer;
+    
+}
+.buttonchoices img{
+    display: block;
+    width: 150px;
+    height: auto;
 }
 .options{
     width: 10%;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="script" href="script.js">
 
     <title>freaky Rock Paper Scissor</title>
 </head>
@@ -17,20 +17,30 @@
         <img src="images/sign board.png" class="sign" alt="sign">
         <!-- <div class="user-plate">user</div>
         <div class="ai-plate">AI</div> -->
-        <span id="user-score">0</span> :
-        <span id="ai-score">0</span>
+        <input id="userscore" class="scoreline" placeholder="0" readonly> :
+        <input id="aiscore" class="scoreline" placeholder="0" readonly>
+        <!-- <span id="user-score">0</span> :
+        <span id="ai-score">0</span> -->
         <img src="images/sign board.png" class="sign" alt="sign">
 
     </div>
-    <div class="result">you win!</div>
+    <div class="result">
+        <input id="myInput" class="resultline" placeholder="pick your move to begin" readonly>
+    </div>
     <div class="choices" id="r">
+        <button class="buttonchoices">
         <img src="images/spongebob rock.jpg" class="options" alt="rock">
+        </button>
     <!-- </div>
     <div class="choices" id="p"> -->
+        <button class="buttonchoices">
         <img src="images/spongebob paper.jpg" class="options" alt="paper">
+        </button>
     <!-- </div>
     <div class="choices" id="s"> -->
+        <button class="buttonchoices">
         <img src="images/spongebob scissors.jpg" class="options" alt="scissors">
+        </button>
     </div>
     <div class="move" id="">
     <p id="move">plot your move in silence</p>
