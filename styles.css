@@ -67,6 +67,7 @@ header > h1{
     font-size: 80px;
     width: 160px;
     text-align: center;
+    color: #fff ;
 }
 .scoreline::placeholder{
     color: #fff;
@@ -80,11 +81,11 @@ header > h1{
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 55px;
+    font-size: 60px;
     padding: 20px;
     background: none;
-    /* height: 90px; */
-    /* width: 50px; */
+    
+    
 }
 .resultline{
     background: none;
@@ -95,9 +96,14 @@ header > h1{
     padding: 20px;
     border: none;
     color: white;
+    /* width: auto; */
+    width: 1500px;
+    font-family: 'Oswald', Times, serif;
 }
 .resultline::placeholder {
     color: #fff;
+    font-family: 'Oswald', Times, serif;
+    
 }
 .choices{
     display: flex;
@@ -105,7 +111,7 @@ header > h1{
     gap: 40px;
     justify-content: center;
     align-items: center;
-
+    
 }
 .buttonchoices{
     gap: 40px;
@@ -115,6 +121,7 @@ header > h1{
     justify-content: center;
     width: 150px;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .buttonchoices img{
@@ -124,12 +131,20 @@ header > h1{
     object-fit: cover;
     border-radius: 50%;
 }
+
 .options{
     width: 10%;
-    
-    border: 3px;
+    border: none; /* No default border */
+    transition: outline 0.3s ease, outline-offset 0.5s ease;
 }
+
+.options:hover{
+    background-color: aqua;
+    outline: 7px solid rgb(9, 255, 0); /* Outline instead of border */
+    outline-offset: 0px; /* Space between image and outline */
+} 
+
 .move{
-    font-size: 48px;
+    font-size: 40px;
     text-align: center;
 }
