@@ -2,8 +2,8 @@ body{
     display: flex;
     flex-direction: column;
     gap: 0px;
-    background-color: black;
-    color: white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     /* background-image: url('images/green\ fn.jpg');
     background-size: 100% 100%;
     background-position: center;
@@ -49,6 +49,11 @@ header > h1{
     color: rgb(255, 255, 255);
     text-align: center;
     font-family:'Times New Roman', Times, serif;
+    /* text-shadow: 0px 4px 5px #6e6e6e; */
+    text-shadow: 0 0 5px #000000, /* Green glow */
+    0 0 10px #ffffff,
+    0 0 20px #ffffff,
+    0 0 30px #ffffff;
     
 }
 .scoreboard{
@@ -93,12 +98,15 @@ header > h1{
     justify-content: center;
     text-align: center;
     font-size: 55px;
-    padding: 20px;
+    /* padding: 20px; */
     border: none;
     color: white;
     /* width: auto; */
     width: 1500px;
     font-family: 'Oswald', Times, serif;
+    text-shadow: 0 0 5px #000000,
+    0 0 10px #6e6e6e,
+    0 0 12px #6e6e6e;
 }
 .resultline::placeholder {
     color: #fff;
@@ -147,5 +155,5 @@ header > h1{
 .move{
     font-size: 40px;
     text-align: center;
-    
+
 }
